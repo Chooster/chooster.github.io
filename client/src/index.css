@@ -7,15 +7,41 @@ body {
   color: white;
 }
 
-/*#home {
-  position: absolute;
-  background-image: url("Images/laptop-bg.jpg");
+/* #home{
+  position: relative;
+  background: #000
+    url(http://www.script-tutorials.com/demos/360/images/stars.png) repeat top
+    center;
   background-size: cover;
-  top: 0;
-  left: 0;
   height: 100vh;
-  width: 100%;
-}*/
+  width: 100vw;
+} */
+
+/* #home::before {
+  content: "";
+  display: block;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(37, 42, 48, 0.3);
+} */
+
+#home {
+  /* display: block; */
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  background-color: rgb(255, 255, 255);
+}
+
+.Ideas-container {
+  /* position: absolute; */
+  /* top: 50%;
+  left: 0;
+  right: 0; */
+}
 
 a:hover {
   cursor: pointer;
@@ -28,18 +54,8 @@ a:hover {
   position: relative;
 }
 
-#home {
-  position: relative;
-  /*background: linear-gradient(rgba(32, 119, 178, 1),rgba(68, 171, 255, .9));*/
-  background: #252a30;
-}
-
-#front-page {
-
-}
-
 .home-desc {
-  position: absolute;
+  position: relative;
   top: 0;
   left: 0;
   width: 100%;
@@ -50,11 +66,13 @@ a:hover {
   letter-spacing: -4px;
   font-size: 52px;
   margin-bottom: -25px;
+  color: rgb(63,81,181);
 }
 
 #lower-desc {
   letter-spacing: -2px;
   font-size: 30px;
+  color: rgb(63,81,181);
 }
 
 .bottom-nav {
@@ -85,7 +103,7 @@ a:hover {
 
 .nav-anchors a:hover {
   /*color: rgba(255, 255, 255, 0.8);*/
-  color: #FED766;
+  color: #fed766;
   transition: all 0.3s ease-in;
 }
 
@@ -100,7 +118,7 @@ a:hover {
 }
 
 #down:hover {
-  border: solid #FED766;
+  border: solid #fed766;
   border-width: 0 5px 5px 0;
   display: inline-block;
   padding: 5px;
@@ -120,11 +138,12 @@ a:hover {
 }
 
 #about {
-  content: "";
+  content: '';
   top: 0;
   bottom: 0;
   left: 0;
   right: 0;
+  background-color: rgb(63,81,181);
 }
 
 #portfolio {
@@ -164,9 +183,9 @@ a:hover {
   letter-spacing: -0.5px;
 }
 
-/* .page-wrapper {
-
-} */
+.page-wrapper {
+  padding: 0 5%;
+}
 
 .contact-wrapper {
   padding: 2% 0;
@@ -177,13 +196,9 @@ a:hover {
   padding-right: 1%;
 }
 
-/* .icon {
-  
-} */
-/*
-.page-wrapper p {
-  margin-top: 20px;
-}*/
+.Info-container {
+  margin-top: 3%;
+}
 
 .Portfolio a {
   color: #252a30;

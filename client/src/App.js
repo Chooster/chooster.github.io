@@ -8,6 +8,7 @@ class App extends Component {
         <section id="home" className="page">
           <span id="front-page">
             <Components.Home />
+            <Components.Ideas />
             <Components.Nav />
           </span>
         </section>
