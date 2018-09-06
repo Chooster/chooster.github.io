@@ -1,27 +1,29 @@
 import React, { Component } from 'react';
-import * as Components from './Components';
+import * as Pages from './Pages';
+
+import Nav from './Components/Nav';
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <section id="home" className="page">
-          <span id="front-page">
-            <Components.Home />
-            <Components.Ideas />
-            <Components.Nav />
-          </span>
-        </section>
-        <section id="about" className="page">
+        <section id="home">
+          <Nav />
           <span>
-            <Components.About />
+            <Pages.Home />
+            {/* <Pages.Blogs /> */}
           </span>
         </section>
-        <section id="portfolio" className="page">
-          <Components.Portfolio />
+        <section id="about">
+          <span>
+            <Pages.About />
+          </span>
+        </section>
+        <section id="portfolio">
+          <Pages.Portfolio />
         </section>
         <section id="contact">
-          <Components.Contact />
+          <Pages.Contact />
         </section>
       </div>
     );
